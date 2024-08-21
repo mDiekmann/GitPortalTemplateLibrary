@@ -30,7 +30,7 @@ kotlin {
             export(project(":analytics"))
             baseName = "allshared"
             isStatic = false
-            linkerOpts.add("-lsqlite3") // why do I need this? Get linke error if not this or isStatic = true
+            linkerOpts.add("-lsqlite3") 
         }
 
         extraSpecAttributes["swift_version"] = "\"5.0\"" // <- SKIE Needs this!

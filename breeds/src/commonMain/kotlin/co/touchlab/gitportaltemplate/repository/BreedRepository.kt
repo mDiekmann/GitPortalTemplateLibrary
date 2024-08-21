@@ -77,7 +77,6 @@ class BreedRepository internal constructor(
     }
 
     suspend fun updateBreedFavorite(breed: Breed) {
-		throw Exception("CRASH TEST")
         dbHelper.updateFavorite(breed.id, !breed.favorite)
     }
 
